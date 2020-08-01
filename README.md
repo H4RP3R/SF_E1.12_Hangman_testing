@@ -10,7 +10,7 @@ python3 game.py
 ```
 ## Running tests
 ```
-python -m unittest tests/test_unittest.py -v
+coverage run -m unittest tests/test_unittest.py -v
 coverage report -m
 ```
 ```
