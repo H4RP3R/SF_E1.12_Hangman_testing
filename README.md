@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/H4RP3R/SF_E1.12_Hangman_testing.svg?branch=master)](https://travis-ci.org/H4RP3R/SF_E1.12_Hangman_testing)
 ## How to run.
 ```
 git clone https://github.com/H4RP3R/SF_E1.12_Hangman_testing.git
