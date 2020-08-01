@@ -35,7 +35,7 @@ def user_attempt():
         letter = input('Input a letter: ').lower().strip()
         if len(letter) > 1:
             letter = None
-            print('You need to enter single letter')
+            print('You need to enter a single letter')
 
     return letter
 

@@ -102,7 +102,7 @@ class TestGameStatus(unittest.TestCase):
         self.assertEqual(game.IN_GAME, False)
 
     def testGameContinues(self):
-        IN_GAME = True
+        game.IN_GAME = True
 
         with patch('sys.stdout', new=NullStdout()) as null_stdout:
             with patch('game.clear_screen', new=self.patch_clear):
