@@ -86,7 +86,7 @@ class TestGameStatus(unittest.TestCase):
     def testRunOutOfAttemps(self, w, m):
         game.IN_GAME = True
 
-        with patch('sys.stdout', new=NullStdout()) as null_stdout:
+        with patch('sys.stdout', new=NullStdout()):
             with patch('game.clear_screen', new=self.patch_clear):
                 game.game_status(w, m)
 
@@ -95,7 +95,7 @@ class TestGameStatus(unittest.TestCase):
     def testGuessedWord(self):
         game.IN_GAME = True
 
-        with patch('sys.stdout', new=NullStdout()) as null_stdout:
+        with patch('sys.stdout', new=NullStdout()):
             with patch('game.clear_screen', new=self.patch_clear):
                 game.game_status(self.win_word, 3)
 
@@ -104,7 +104,7 @@ class TestGameStatus(unittest.TestCase):
     def testGameContinues(self):
         game.IN_GAME = True
 
-        with patch('sys.stdout', new=NullStdout()) as null_stdout:
+        with patch('sys.stdout', new=NullStdout()):
             with patch('game.clear_screen', new=self.patch_clear):
                 game.game_status('wo_d', 3)
 
